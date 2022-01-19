@@ -14,30 +14,47 @@
         <!-- Dev Icon e Font Awesome-->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css">
         <script src="https://kit.fontawesome.com/5f2b0ae3e0.js" crossorigin="anonymous"></script>
+
         <!-- CSS -->
         <link rel="stylesheet" href="css/menuStyle.css" />
         <link rel="stylesheet" href="css/style.css" />
+
+        <!-- JS -->
+        <script src="javaScript/mobile-navbar.js" defer></script>
 
 
     </head>
 
     <body>
 
-        <header>
+        <header class="primary-header flex">
+
+            <a class="logo flex" href="/">Reifhel</a>
+
+            <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+                <span class="sr-only">Menu</span>
+            </button>
+
 
             <nav>
-                <a class="logo" href="/">Reifhel</a>
 
-                <div class="mobile-menu">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-                </div>
+                <ul data-visible="false" id="primary-navigation" class="primary-navigation flex">
 
-                <ul class="nav-list">
-                <li><a href="index.html">Início</a></li>
-                <li><a href="paginas/sobreMim.html">Sobre mim</a></li>
-                <li><a href="paginas/projetos.html">Projetos</a></li>
+                <li class="active">
+                    <a href="index.html">
+                        <span aria-hidden="true">00</span>Início
+                    </a>
+
+                <li>
+                    <a href="paginas/sobreMim.html">
+                        <span aria-hidden="true">01</span>Sobre mim
+                    </a>
+
+                <li>
+                    <a href="paginas/projetos.html">
+                        <span aria-hidden="true">02</span>Projetos
+                    </a>
+
                 </ul>
 
             </nav>
@@ -84,8 +101,6 @@
                 </footer>
 
         </main>
-
-        <script src="javaScript/mobile-navbar.js"></script>
 
     </body>
 
