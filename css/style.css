@@ -1,0 +1,89 @@
+
+/*
+    Configurando as imagens que serão usadas...
+    display: block --- para não distorcer as imagens
+*/
+
+
+body {
+    font-family: "Source Code Pro", monospace;
+    background: url("/imagens/bg.jpg") no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 96vh;
+    color:#23232e;
+}
+  
+main {
+    margin: auto;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    height: 100vh;
+    
+}
+
+footer {
+    color:rgba(255, 255, 255, 0.8)
+}
+
+.box{
+    text-align: center;
+    background: rgba(255, 255, 255, 0.8);
+    padding: max(3vh, 2rem);
+    box-shadow: 2px 2px 16px rgba(0,0,0,0.16);
+    border-radius: 15%;
+
+}
+
+.foto{
+    margin: 1rem;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    transition: 200ms;
+}
+
+
+.foto:hover{
+    border: 3px solid rgba(96, 28, 156, 0.8);
+}
+
+.title{
+    font-size: 30px;
+    font-weight: normal;
+}
+
+.box span{
+    font-size:24px;
+}
+
+.box p{
+    font-size: 18px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+.sociais{
+    display: flex;
+    justify-content: center;
+
+}
+
+.sociais li{
+    margin-right: 2rem;
+    list-style: none;
+    animation: all;
+    transition: 200ms;
+}
+
+.sociais a{
+    color: black;
+}
+
+.sociais a:hover{
+    transform:rotate(-10deg);
+    color: rgba(96, 28, 156, 0.8);
+}
